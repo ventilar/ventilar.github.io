@@ -1,0 +1,148 @@
+---
+layout: null
+title: Ventil.Ar
+description: Sensores IOT de Dióxido de Carbono
+sitemap:
+    priority: 1.0
+    lastmod: 2022-05-01
+    changefreq: weekly
+---
+<!DOCTYPE HTML>
+
+<html lang="{{ site.locale }}">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body class="is-loading">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro">
+            <h1>{{ site.title }}</h1>
+            <h2>{{ site.description }}</h2>
+            <p>
+                <img src="images/sensor1.jpeg">
+            </p>
+            <ul class="actions">
+                <li>
+                    <a href="#header" class="button icon solo fa-arrow-down scrolly">Continuar</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <a href="{{ '/' | absolute_url }}" class="logo">{{ site.title }}</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            {% include nav.html %}
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2>Monitoreo de CO2</h2>
+                    <p>
+                        Dado que al respirar producimos Dióxido de Carbono (CO2), podemos utilizar la concentración de
+                        este gas en un ambiente cerrado como indicador de la necesidad de ventilación del mismo, para
+                        disminuir el riesgo de propgación del <b>COVID-19</b> y otras enfermedades de transmisión aérea.
+                    </p>
+                </header>
+                <p>
+                    Nuestros sensores Ventil.Ar utilizan la tecnología <b>NDIR</b> (non-dispersive infrarred, infrarrojo
+                    no
+                    dispersivo), para obtener mediciones de precisión y confiables del CO2 en el aire.
+                </p>
+                <p>
+                    Mediante indicaciones visuales y sonoras, se alerta en tiempo real cuando se alcanzan los siguientes
+                    niveles de concentración de CO2, medidos en partes por millón de masa de aire (ppm):
+                <ul align="left">
+                    <li>Menor a 700 ppm: Condición normal</li>
+                    <li>Entre 700 y 1000 ppm: Se recomienda ventilar</li>
+                    <li>Mayor a 1000 ppm: Se recomienda no permanecer en el ambiente</li>
+                </ul>
+                </p>
+                <!--
+                <a href="#" class="image main">
+                    <img src="{{ '/images/sensor1.jpeg' | absolute_url }}" alt="" />
+                </a>
+                -->
+            </article>
+
+            <article class="post">
+                <header class="major">
+                    <h2>Modelos disponibles</h2>
+                    <p>
+                        El diseño compacto y liviano de Ventil.Ar permite que se pueda utilizar en todo tipo de
+                        ambientes, como por ejemplo: hogares, oficinas, consultorios, instituciones educativas, e
+                        inclusive en transporte.
+                    </p>
+                </header>
+                <p>
+                    Nuestros dispositivos incluyen las siguientes caracteristicas:
+                <ul class="actions">
+                    <li><a href="/specs/" class="button big icon fa-tachometer">Medición de CO2</a></li>
+                    <li><a href="/specs/" class="button big icon fa-tachometer">Medición de Temperatura y Humedad</a>
+                    </li>
+                </ul>
+                <ul class="actions">
+                    <li><a href="/specs/" class="button big icon fa-volume-up">Alertas sonoras</a></li>
+                    <li><a href="/specs/" class="button big icon fa-lightbulb-o">Alertas visuales</a></li>
+                </ul>
+                <ul class="actions">
+                    <li><a href="/specs/" class="button big icon fa-wifi">Conectividad WiFi</a></li>
+                    <li><a href="/specs/" class="button big icon fa-mobile">Interfaz Web</a></li>
+                </ul>
+                <ul class="actions">
+                    <li><a href="/specs/" class="button big icon fa-usb">Alimentación por USB</a></li>
+                    <li><a href="/specs/" class="button big icon fa-ban">No requiere software adicional</a></li>
+                </ul>
+                </p>
+                <p>
+                    Contamos con tres opciones para que elijas cuál se adapta mejor a tus necesidades.
+                </p>
+            </article>
+
+            <!-- Sensors -->
+            <section class="posts">
+                {% for sensor in site.sensors limit:3 %}
+                <article>
+                    <a href="{{ sensor.url | absolute_url }}" class="image fit">
+                        <img src="{{ sensor.image | absolute_url }}" alt="" />
+                    </a>
+                    <header>
+                        <h2><a href="{{ sensor.url | absolute_url }}">{{ sensor.title }}</a></h2>
+                    </header>
+                    <p>{{ sensor.excerpt }}</p>
+                    <ul class="actions">
+                        <li>
+                            <a href="{{ sensor.url | absolute_url }}" class="button">Más Información</a>
+                        </li>
+                    </ul>
+                </article>
+                {% endfor %}
+
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        {% include foot.html %}
+
+    </div>
+
+    <!-- Scripts -->
+    {% include scripts-main.html %}
+    {% include tracking.html %}
+
+</body>
+
+</html>

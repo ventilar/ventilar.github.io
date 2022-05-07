@@ -1,0 +1,102 @@
+# Site
+title: "Ventil.Ar"
+description: "Sensores IOT de Dióxido de Carbono"
+locale: "en_AR"
+domain: "ventilar.github.io"
+url: "https://ventil.ar"
+baseurl: ""
+
+# Comments
+disqus_shortname: default
+
+# Social
+analytics-id: "default"
+twitter: default
+facebook: default
+instagram: default
+github: default
+
+# Contact Info
+location: Buenos Aires, Argentina
+phone: +54 911 5758-1977
+email: info@ventil.ar
+
+# Other
+background_image: /images/bg.jpg
+# Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
+slapform_thankyou_page: /form-thank-you
+
+# Sensor Collection
+collections:
+  sensors:
+    output: true
+    order:
+      - sensor_led.md
+      - sensor_oled.md
+      - sensor_tm.md
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: "/blog/:title/"
+      layout: post
+      author:
+
+# Jekyll
+permalink: /blog/:title/
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+mathjax: true
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+# Plugins
+plugins:
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+jekyll-mentions:
+  base_url: https://github.com
+
+# Exclude list
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - _site
+  - src
+  - vendor
+  - CNAME
+  - LICENSE
+  - Rakefile
+  - old
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
