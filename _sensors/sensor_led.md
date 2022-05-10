@@ -2,7 +2,7 @@
 layout: sensor
 title:  "Ventil.Ar LED"
 excerpt: "Ofrece indicador visual mediante luces LED de color según el nivel de CO2 alcanzado."
-image: "/images/sensor1.jpeg"
+image: "/images/ventil.ar_led.jpg"
 ---
 
 <p>
@@ -19,3 +19,4 @@ En cualquier momento es posible silenciar la alerta sonora mediante una breve pu
 <p>
 La conexión Wi-Fi se inicializa al encender el dispositivo, y los LEDs mostrarán un color <b>Azul</b> para indicar que dicha configuración se encuentra en curso.
 </p>
+<span class="image fit"><img src="{{ "/images/ventil.ar_led_colors.jpg" | absolute_url }}" alt="" /></span>

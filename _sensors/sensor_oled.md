@@ -2,7 +2,7 @@
 layout: sensor
 title:  "Ventil.Ar OLED"
 excerpt: "Brinda información precisa de niveles de CO2 mediante una pantalla OLED."
-image: "/images/sensor1.jpeg"
+image: "/images/ventil.ar_oled.jpg"
 ---
 
 <p>
@@ -16,6 +16,7 @@ En dicha pantalla se mostrarán las condiciones de alerta equivalentes:
 <li><b>Rojo</b> - Peligro: Mostrará dicha alerta en pantalla.</li>
 </ul>
 </p>
+<span class="image fit"><img src="{{ "/images/ventil.ar_oled_red.jpg" | absolute_url }}" alt="" /></span>
 <p>
 La alerta sonora también acompaña cada nivel de alerta, pudiendo ser silenciada mediante una breve pulsación sobre el sensor de proximidad en la parte superior del gabinete.
 </p>
