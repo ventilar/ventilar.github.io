@@ -1,7 +1,7 @@
 ---
 layout: sensor
 title:  "Ventil.Ar TM"
-excerpt: "Sensores para brindar soluciones a medida y adaptarse a las necesidades más específicas."
+excerpt: "Sensores para desarrollar soluciones a medida y adaptarse a las necesidades más específicas."
 image: "/images/ventil.ar_tm.jpg"
 ---
 
