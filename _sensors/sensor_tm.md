@@ -6,7 +6,7 @@ image: "/images/ventil.ar_tm.jpg"
 ---
 
 <p>
-El gabinete puede ser personalizado (colores utilizados, forma del mismo, agregado de inscripción o marca, etc.) para instituciones u organizaciones con necesidades particulares
+El gabinete puede ser personalizado (colores utilizados, forma del mismo, agregado de inscripción o marca, etc.) para instituciones u organizaciones con necesidades particulares.
 </p>
 <p>
 Del mismo modo es posible incluir la alerta visual mediante LEDs RGB, pantalla OLED, ambas, o ninguna, como así tambien decidir incorporar la alerta sonora (Buzzer) o no.
