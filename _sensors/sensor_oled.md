@@ -18,7 +18,7 @@ En dicha pantalla se mostrarán las condiciones de alerta equivalentes:
 </p>
 <span class="image fit"><img src="{{ "/images/ventil.ar_oled_red.jpg" | absolute_url }}" alt="" /></span>
 <p>
-La alerta sonora también acompaña cada nivel de alerta, pudiendo ser silenciada mediante una breve pulsación sobre el sensor de proximidad en la parte superior del gabinete.
+La alerta sonora también acompaña cada nivel de alerta, pudiendo ser silenciada mediante una breve pulsación sobre el sensor táctil en la parte superior del gabinete.
 </p>
 <p>
 La conexión Wi-Fi se inicializa al encender el dispositivo, momento en el que la pantalla OLED muestra información al respecto.
